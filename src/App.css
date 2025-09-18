@@ -13,7 +13,7 @@ body {
   
 }
 
-/* Header & Nav */
+
 .header {
   width:97rem;
   background: linear-gradient(90deg, #2563eb, #362dd6);
@@ -123,49 +123,80 @@ body {
   }
 }
 
-/* Hero Section */
 .hero {
   min-height: calc(100vh - 120px);
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f6f9fc, #ffffff);
+  padding: 4rem 1rem;
 }
-
 
 .hero-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   max-width: 1100px;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .hero-text {
-  text-align: center;
+  max-width: 500px;
 }
 
 .hero-text h1 {
-  font-size: 2.2rem;
-  color: #1e3a8a;
+  font-size: 2.5rem;
+  color: #111;
   margin-bottom: 1rem;
 }
 
 .hero-text p {
-  font-size: 1.15rem;
-  color: #1157c8;
-  max-width: 600px;
-  margin: auto;
-  
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
 }
 
 .hero-image img {
-  width: 200px;
-  height: 200px;
-  object-fit:cover;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  margin-left:400px;
-  transition: transform 0.2s linear;
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* ===== Quote Section ===== */
+.hero-quote {
+  padding: 5rem 1rem;
+  text-align: center;
+  background: #f6f9fc;
+}
+
+.hero-quote p {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top:-100rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+  }
 }
 
 /* Buttons */
@@ -218,17 +249,36 @@ body {
   }
 }
 
-/* Generic page layout */
 .pages {
-  min-height: 100vh;      /* takes full height of the screen */
-  display: flex;          /* lets you center items if you want */
+  min-height: 100vh;      
+  display: flex;          
   flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;     /* horizontal centering */
+  justify-content: center; 
+  align-items: center;     
   padding: 2rem;
   box-sizing: border-box;
 }
 
 .social p{
   color: #444;
+}
+
+.hero-quote{
+  font-style: italic;
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+  margin-top: 55rem;
+
+}
+
+.hero-quote p{
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #333;
+  font-size: 1.2rem;
+
+
 }
