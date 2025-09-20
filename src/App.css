@@ -10,9 +10,15 @@ body {
   background: linear-gradient(120deg, #f6f9fc, #ffffff);
   color: #222;
   line-height: 1.6;
-  
+  overflow: hidden;
 }
 
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 .header {
   width:97rem;
@@ -104,7 +110,7 @@ body {
 }
 
 
-/* Responsive tweaks */
+
 @media (max-width: 600px) {
   .logo {
     font-size: 1.3rem;
@@ -150,13 +156,14 @@ body {
 .hero-text h1 {
   font-size: 2.5rem;
   color: #111;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .hero-text p {
   font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 3rem;
+  font-style: oblique;
 }
 
 .hero-image img {
@@ -170,23 +177,10 @@ body {
   backface-visibility: hidden;
 }
 
-/* ===== Quote Section ===== */
-.hero-quote {
-  padding: 5rem 1rem;
-  text-align: center;
-  background: #f6f9fc;
-}
 
-.hero-quote p {
-  font-style: italic;
-  font-size: 1.4rem;
-  color: #333;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top:-100rem;
-}
 
-/* ===== Responsive ===== */
+
+
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -199,7 +193,7 @@ body {
   }
 }
 
-/* Buttons */
+
 .btn-primary {
   display: inline-block;
   background: #2563eb;
@@ -216,10 +210,10 @@ body {
   background: #1e40af;
 }
 
-/* Responsive breakpoints */
+
 @media (min-width: 768px) {
   .hero-content {
-    flex-direction: row;         /* Row layout on tablets & desktops */
+    flex-direction: row;         
     justify-content: space-between;
     align-items: center;
   }
@@ -263,22 +257,152 @@ body {
   color: #444;
 }
 
-.hero-quote{
+/* ===== Quote Section (directly below hero) ===== */
+.hero-quote {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #d0e3f7;
+}
+
+.hero-quote p {
   font-style: italic;
-  color: #555;
-  max-width: 600px;
-  margin: auto;
-  font-size: 1.1rem;
-  margin-top: 55rem;
+  font-size: 1.4rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.poem-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fafafa;
+  padding: 2rem;
+  box-sizing: border-box;
+ 
+}
+
+.poem-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.categories button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.categories button:hover {
+  background: #f1f1f1;
+}
+
+.categories .active {
+  background: #333;
+  color: #fff;
+}
+
+.poem-book {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.poem-page {
+  width: 100%;
+  height:100%;
+  background: #c8cee3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  height: 20px;
+}
+
+.poem-page img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.controls button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: background 0.3s;
 
 }
 
-.hero-quote p{
-  margin-top: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
+.controls button:hover {
+  background: #f1f1f1;
+}
+
+.blog-wrapper {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
   color: #333;
+}
+
+.blog-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 {
   font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
 
-
+.read-more {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #2563eb;
+  margin-top: 0.3rem;
 }

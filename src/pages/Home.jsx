@@ -31,6 +31,7 @@ export default function Home() {
             <img src={myPhoto} alt="Niviya" />
           </div>
         </div>
+        
       </section>
 
       <section className="hero-quote">

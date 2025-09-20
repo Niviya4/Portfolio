@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
-import Poems from "./pages/Poems";
+import PoemBook from "./pages/PoemBook";   // ✅ import your component
 import "./App.css";
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/poems" element={<Poems />} />
+          <Route path="/poems" element={<PoemBook />} />   {/* ✅ Correct route */}
         </Routes>
       </main>
 
