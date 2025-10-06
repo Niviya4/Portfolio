@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
-import PoemBook from "./pages/PoemBook";   // ✅ import your component
+import PoemBook from "./pages/PoemBook";   
 import "./App.css";
 
 export default function App() {
@@ -35,9 +35,7 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} Niviya • Built with Vite + React</p>
-      </footer>
+      
     </>
   );
 }

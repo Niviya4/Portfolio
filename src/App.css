@@ -10,7 +10,7 @@ body {
   background: linear-gradient(120deg, #f6f9fc, #ffffff);
   color: #222;
   line-height: 1.6;
-  overflow: hidden;
+  
 }
 
 #root {
@@ -101,13 +101,6 @@ body {
 }
 
 
-.footer {
-  background: #1e3a8a;
-  color: #e5e7eb;
-  padding: 1rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-}
 
 
 
@@ -313,7 +306,7 @@ body {
 }
 
 .categories .active {
-  background: #333;
+  background:#1e3a8a;
   color: #fff;
 }
 
@@ -405,4 +398,288 @@ body {
   font-size: 0.9rem;
   color: #2563eb;
   margin-top: 0.3rem;
+}
+
+
+.garden-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdf0f5 0%, #eef3ff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.garden-bg::before,
+.garden-bg::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,192,203,0.4) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.garden-bg::before {
+  top: 10%;
+  left: 15%;
+}
+
+.garden-bg::after {
+  bottom: 10%;
+  right: 15%;
+}
+
+.garden-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 3rem;
+  z-index: 1;
+  text-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+}
+
+.social-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.bubble {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border: 2px solid transparent;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.bubble:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-8px);
+}
+
+.bubble-icon {
+  font-size: 2.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.bubble p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer-quote {
+  margin-top: 3rem;
+  font-style: italic;
+  color: #666;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.projects-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef3ff, #fdf6ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects-title {
+  font-size: 2.3rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 0 10px rgba(173, 200, 255, 0.3);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  justify-items: center;
+}
+
+.project-card {
+  width: 230px;
+  height: 230px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 2px solid rgba(150, 150, 255, 0.25);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 1.5rem;
+  color: #333;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #1e3a8a;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.projects-footer {
+  margin-top: 3rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+}
+
+.about-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9faff, #eaf3ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #2b2b2b;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.about-hero span {
+  color: #4b6ef5;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.about-bio {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.about-interests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.interest-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 1.8rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.interest-card:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #4b6ef5;
+  margin-bottom: 0.7rem;
+}
+
+.about-quote {
+  text-align: center;
+  max-width: 600px;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #444;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.view-work-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 26px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  border: none;
+  border-radius: 35px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(255, 118, 136, 0.4);
+}
+
+.view-work-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  box-shadow: 0 6px 16px rgba(255, 118, 136, 0.6);
+}
+
+.arrow-icon {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-work-btn:hover .arrow-icon {
+  transform: translateX(6px);
 }
