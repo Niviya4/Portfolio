@@ -186,24 +186,6 @@ body {
   }
 }
 
-
-.btn-primary {
-  display: inline-block;
-  background: #2563eb;
-  color: #fff;
-  padding: 0.7rem 1.3rem;
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-.btn-primary:hover {
-  background: #1e40af;
-}
-
-
 @media (min-width: 768px) {
   .hero-content {
     flex-direction: row;         
@@ -629,7 +611,8 @@ body {
 }
 
 .interest-card:hover {
-  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 30px 5px rgba(255,0,120,0.3), 0 0 60px 10px rgba(0,150,255,0.3);
+  transform: translateY(-5px);
 }
 
 .icon {
@@ -639,16 +622,28 @@ body {
 }
 
 .about-quote {
+ width: 660px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius:5px;
+  backdrop-filter: blur(12px);
+  border: 2px solid transparent;
   text-align: center;
-  max-width: 600px;
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #444;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 1.5rem 2rem;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 6px 16px #2563eb;
+}
+.about-quote:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-8px);
 }
 
 .view-work-btn {
@@ -659,19 +654,19 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  background: linear-gradient(90deg, #2563eb, #362dd6);
   border: none;
   border-radius: 35px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 12px rgba(255, 118, 136, 0.4);
+  box-shadow: 0 4px 12px #2563eb, #362dd6;
 }
 
 .view-work-btn:hover {
   transform: translateY(-3px);
-  background: linear-gradient(90deg, #ff758c, #ff7eb3);
-  box-shadow: 0 6px 16px rgba(255, 118, 136, 0.6);
+  background: linear-gradient(90deg, #2563eb, #362dd6);
+  box-shadow: 0 6px 16px #2563eb, #362dd6;
 }
 
 .arrow-icon {

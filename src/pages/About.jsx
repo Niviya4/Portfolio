@@ -12,9 +12,9 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1>Hi, I’m <span>Niviya Stephen</span> 🌸</h1>
+        <h1>Hi, I’m <span>Niviya</span></h1>
         <p>
-          A software developer who writes code with logic and poems with heart.
+          A Computer Science and Engineering Student, who love to write code, desing and innovate.
         </p>
       </motion.div>
 
@@ -27,14 +27,10 @@ export default function About() {
       >
         <p>
           I’m a Computer Science Engineer with a deep passion for <b>web design</b>, 
-          <b> AI innovation</b>, and <b>storytelling through words</b>.  
-          My journey began in Biotechnology, wandered through labs, and bloomed in 
-          code — where I found the art in logic and the poetry in precision.
+          <b> AI innovation</b>, <b>writing poems </b>and <b> blogs</b>.  
         </p>
         <p>
-          I’m currently building meaningful digital experiences — from 
-          apps that connect sports enthusiasts to AI projects that inspire learning.  
-          And when I’m not debugging code, I’m writing verses for my poetry page 
+          All that drives me is the curiosity of learning new things and the burning passion for writing and this eventually made me to start my instagram page
           <i> “Ink & Insights.”</i>
         </p>
       </motion.div>

@@ -1,6 +1,6 @@
 import myPhoto from "../assets/WhatsApp Image 2024-12-19 at 12.51.11 PM.jpg";
 import { useEffect } from "react";
-import { Link } from "react-router-dom"; // ✅ Add this import
+import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function Home() {
             <h1>Just a Dreamer💭</h1>
             <p>CodeSmith · WordWeaver · Sunseeker</p>
 
-            {/* 🌟 Replaced <a> with React Router Link */}
+           
             <Link to="/projects" className="view-work-btn">
               <span>View My Work</span>
               <svg
