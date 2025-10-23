@@ -2,7 +2,7 @@
 export default function Poems() {
   return (
     <section className="pages">
-      <h2></h2>
+      <h2>Poems</h2>
       
     </section>
   );

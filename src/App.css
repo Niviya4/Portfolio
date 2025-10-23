@@ -10,7 +10,7 @@ body {
   background: linear-gradient(120deg, #f6f9fc, #ffffff);
   color: #222;
   line-height: 1.6;
-  
+  transition: background 0.3s ease;
 }
 
 #root {
@@ -129,6 +129,7 @@ body {
   justify-content: center;
   background: linear-gradient(120deg, #f6f9fc, #ffffff);
   padding: 4rem 1rem;
+  
 }
 
 .hero-content {
@@ -144,12 +145,14 @@ body {
 
 .hero-text {
   max-width: 500px;
+  transition: background 0.3s ease;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
   color: #111;
   margin-bottom: 3rem;
+  transition: background 0.3s ease;
 }
 
 .hero-text p {
@@ -157,6 +160,7 @@ body {
   color: #2563eb;
   margin-bottom: 3rem;
   font-style: oblique;
+  transition: background 0.3s ease;
 }
 
 .hero-image img {
@@ -232,7 +236,7 @@ body {
   color: #444;
 }
 
-/* ===== Quote Section (directly below hero) ===== */
+
 .hero-quote {
   padding: 4rem 1rem;
   text-align: center;
