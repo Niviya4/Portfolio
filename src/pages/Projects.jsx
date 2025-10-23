@@ -6,14 +6,17 @@ export default function Projects() {
     {
       name: "DocuMerge",
       desc: "Document collaboration platform (Spring Boot & MVC).",
+      url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
     },
     {
       name: "Ilakku",
       desc: "Sports networking app promoting heritage games.",
+      url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
     },
     {
       name: "The Missile Man",
       desc: "RAG app answering questions about A.P.J Abdul Kalam.",
+      url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
     },
   ];
 
