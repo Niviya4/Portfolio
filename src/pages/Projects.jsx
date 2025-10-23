@@ -1,25 +1,29 @@
 import { motion } from "framer-motion";
 
+const projects = [
+  {
+    name: "Gourmet",
+    desc: "Food review app.",
+    url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
+  },
+  {
+    name: "The Missile Man",
+    desc: "RAG app answering questions about A.P.J Abdul Kalam.",
+    url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
+  },
+  {
+    name: "TripPlanner",
+    desc: "Travel itinerary generator using AI.",
+    url: "https://github.com/Niviya4/sih_travelplanner",
+  },
+  {
+    name: "RandomVerse",
+    desc: "Your daily dose of random verse.",
+    url: "https://github.com/Niviya4/sih_travelplanner",
+  },
+];
 
 export default function Projects() {
-  const projects = [
-    {
-      name: "DocuMerge",
-      desc: "Document collaboration platform (Spring Boot & MVC).",
-      url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
-    },
-    {
-      name: "Ilakku",
-      desc: "Sports networking app promoting heritage games.",
-      url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
-    },
-    {
-      name: "The Missile Man",
-      desc: "RAG app answering questions about A.P.J Abdul Kalam.",
-      url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
-    },
-  ];
-
   return (
     <div className="projects-container">
       <motion.h2
@@ -28,13 +32,16 @@ export default function Projects() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        💻 My Creative Projects
+        💻 Projects
       </motion.h2>
 
       <div className="projects-grid">
         {projects.map((proj, index) => (
-          <motion.div
+          <motion.a
             key={index}
+            href={proj.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="project-card"
             whileHover={{
               scale: 1.07,
@@ -45,7 +52,8 @@ export default function Projects() {
           >
             <h3>{proj.name}</h3>
             <p>{proj.desc}</p>
-          </motion.div>
+            <span className="read-more">Read →</span>
+          </motion.a>
         ))}
       </div>
 

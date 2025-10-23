@@ -55,7 +55,10 @@ export default function PoemBook() {
   return (
     <div className="poem-wrapper">
       <h1 className="poem-title">Poems</h1>
-
+      <p classsname="intro-text">
+        Welcome to my Enchanted Shelf 🌸 <br></br> 
+        Dive into the Forgotten Vault and here is your key <em>Ink & Insight</em>.
+      </p>
       <div className="categories">
         {Object.keys(poems).map((cat) => (
           <button

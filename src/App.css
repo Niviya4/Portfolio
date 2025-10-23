@@ -271,6 +271,7 @@ body {
   display: flex;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  margin-top:30px;
 }
 
 .categories button {
@@ -677,4 +678,13 @@ body {
 
 .view-work-btn:hover .arrow-icon {
   transform: translateX(6px);
+}
+
+.intro-text{
+  font-size: 1.2rem;
+  font-family: Uncial Antiqua, serif;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-style: oblique;
+  align-items:justify;
 }
