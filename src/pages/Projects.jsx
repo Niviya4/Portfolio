@@ -1,25 +1,27 @@
 import { motion } from "framer-motion";
+import gourmetImg from "../assets/Untitled design.png";
 
 const projects = [
   {
     name: "Gourmet",
     desc: "Food review app.",
-    url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
+    url: gourmetImg,
   },
   {
     name: "The Missile Man",
     desc: "RAG app answering questions about A.P.J Abdul Kalam.",
-    url: "https://niviyat.substack.com/p/the-ultimate-guide-to-beating-procrastination?r=55vvu8",
+    url: "https://www.guvi.in/rag/a54fc7a9-56ca-4867-9987-788d12142010/",
   },
-  {
-    name: "TripPlanner",
-    desc: "Travel itinerary generator using AI.",
-    url: "https://github.com/Niviya4/sih_travelplanner",
-  },
+  
   {
     name: "RandomVerse",
     desc: "Your daily dose of random verse.",
-    url: "https://github.com/Niviya4/sih_travelplanner",
+    url: "https://niviya4.github.io/FeelGoodQuotes/",
+  },
+  {
+    name: "Illaku",
+    desc: "A design of social platform for Sports enthusiasts.",
+    url: "https://www.behance.net/gallery/221570845/-(illaku)-An-App-for-Sports-Enthusiasts",
   },
 ];
 
@@ -52,7 +54,7 @@ export default function Projects() {
           >
             <h3>{proj.name}</h3>
             <p>{proj.desc}</p>
-            <span className="read-more">Read →</span>
+            <span className="read-more">View →</span>
           </motion.a>
         ))}
       </div>
