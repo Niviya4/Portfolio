@@ -31,6 +31,7 @@ export default function Blog() {
             className="blog-card"
           >
             <h3>{b.title}</h3>
+            
             <span className="read-more">Read →</span>
           </a>
         ))}
